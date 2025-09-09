@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Links Profile</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'dark-bg': '#141414',
+            'card-bg': '#1f1f1f',
+            'lime-green': '#c4f82a',
+            'button-bg': '#333333',
+            'text-gray': '#999999'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-dark-bg text-white min-h-screen flex flex-col justify-center items-center p-4 font-sans">
+  <main class="w-full max-w-sm flex justify-center items-center">
+    <article class="bg-card-bg rounded-xl px-8 py-10 text-center w-full shadow-2xl">
+      <header class="mb-6">
+        <img src="./assets/images/avatar-jessica.jpeg" alt="Jessica Randall profile picture" class="w-22 h-22 rounded-full mb-6 object-cover mx-auto">
+        <h1 class="text-2xl font-semibold mb-1 text-white">Jessica Randall</h1>
+        <p class="text-sm text-lime-green font-semibold mb-6">London, United Kingdom</p>
+        <p class="text-sm text-white leading-relaxed">"Front-end developer and avid reader."</p>
+      </header>
+      
+      <nav class="mt-6" aria-label="Social media links">
+        <ul class="flex flex-col gap-4">
+          <li><a href="#" class="block bg-button-bg text-white no-underline py-3 px-6 rounded-lg font-semibold text-sm transition-all duration-300 hover:bg-lime-green hover:text-dark-bg hover:-translate-y-0.5">GitHub</a></li>
+          <li><a href="#" class="block bg-button-bg text-white no-underline py-3 px-6 rounded-lg font-semibold text-sm transition-all duration-300 hover:bg-lime-green hover:text-dark-bg hover:-translate-y-0.5">Frontend Mentor</a></li>
+          <li><a href="#" class="block bg-button-bg text-white no-underline py-3 px-6 rounded-lg font-semibold text-sm transition-all duration-300 hover:bg-lime-green hover:text-dark-bg hover:-translate-y-0.5">LinkedIn</a></li>
+          <li><a href="#" class="block bg-button-bg text-white no-underline py-3 px-6 rounded-lg font-semibold text-sm transition-all duration-300 hover:bg-lime-green hover:text-dark-bg hover:-translate-y-0.5">Twitter</a></li>
+          <li><a href="#" class="block bg-button-bg text-white no-underline py-3 px-6 rounded-lg font-semibold text-sm transition-all duration-300 hover:bg-lime-green hover:text-dark-bg hover:-translate-y-0.5">Instagram</a></li>
+        </ul>
+      </nav>
+    </article>
+  </main>
+</body>
+</html>
